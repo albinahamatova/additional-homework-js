@@ -154,26 +154,26 @@ console.log(productsS);
 
 const fruitsS = ["apple", "banana", "orange"];
 
-fruitsS.forEach((index) => {
-  console.log(index);
+fruitsS.forEach((fruit) => {
+  console.log(fruit);
 });
 
 const numbersM = [1, 2, 3, 4, 5];
 
-numbersM.forEach((index) => {
-  console.log(index);
+numbersM.forEach((number) => {
+  console.log(number);
 });
 
 const names = ["Amina", "Dana", "Aruzhan"];
 
-names.forEach((index) => {
-  console.log(`Привет, ${index}`);
+names.forEach((name) => {
+  console.log(`Привет, ${name}`);
 });
 
 const numbersS2 = [2, 4, 6];
 
-numbersS2.forEach((index) => {
-  console.log(index * 2);
+numbersS2.forEach((number) => {
+  console.log(number * 2);
 });
 
 const colorsS = ["red", "green", "blue"];
@@ -184,9 +184,9 @@ colorsS.forEach((color, index) => {
 
 const numbersW = [10, 20, 30];
 
-numbersW.forEach((index) => {
-  if (index < 20) {
-    console.log(index);
+numbersW.forEach((number, index) => {
+  if (index < 2) {
+    console.log(number);
   }
 });
 
@@ -208,16 +208,16 @@ productsW.forEach((product) => {
 
 const numbersX = [1, 5, 10, 15, 20];
 
-numbersX.forEach((index) => {
+numbersX.forEach((number) => {
   if (index > 10) {
-    console.log(index);
+    console.log(number);
   }
 });
 
 const ages = [15, 18, 20, 16, 30];
 
-ages.forEach((index) => {
-  if (index >= 18) {
+ages.forEach((age) => {
+  if (age >= 18) {
     console.log("Совершеннолетний");
   } else {
     console.log("Несовершеннолетний");
@@ -329,8 +329,8 @@ const buttonQ = document.querySelector("#button");
 
 //  Часть 10
 
-const mainTitle = document.getElementById("main title");
-const mainTitleQ = document.querySelector("#main title");
+const mainTitle = document.getElementById("main-title");
+const mainTitleQ = document.querySelector("#main-title");
 
 // document.getElementById("title") - находит только по id
 // document.querySelector("#title") - находит по id с помощью "#", а по классу с помощью "."
@@ -338,7 +338,7 @@ const mainTitleQ = document.querySelector("#main title");
 // document.querySelector(".card") - выведет первую карточку из пяти
 // использовать document.querySelectorAll(".card")
 // querySelector - выводит первый элемент, querySelectorAll - выводит все элементы
-// document.getElementByClassName ("item") - вернет 1,2,3
+// document.getElementByClassName ("item") - вернет 3 элемента div с классом item
 
 // Часть 11
 
@@ -373,7 +373,7 @@ card72.forEach((card, index) => {
 const cards73 = document.querySelectorAll(".card");
 
 card73.forEach((card, index) => {
-  if (index >= 5) {
+  if (index <= 5) {
     card.classList.add("main.cards");
   } else {
     card.classList.add("other.cards");
