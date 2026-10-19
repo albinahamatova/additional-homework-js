@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашнее задание 5</title>
+  </head>
+  <body>
+    <div>
+      <h2>Форма подписки</h2>
+      <form id="subscribe-form">
+        <label for="email-input"> Email: </label>
+        <input
+          type="email"
+          id="email-input"
+          name="email"
+          placeholder="Введите ваш email"
+          minlength="5"
+          required
+        />
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Форма обратной связи</h2>
+      <form id="feedback-form">
+        <label for="fb-name"> Имя </label>
+        <input
+          type="text"
+          id="fb-name"
+          name="name"
+          placeholder="Ваше имя"
+          minlength="2"
+          required
+        />
+
+        <label for="fb-email"> Email </label>
+        <input
+          type="email"
+          id="fb-email"
+          name="email"
+          placeholder="Ваш email"
+          minlength="5"
+          required
+        />
+
+        <label for="fb-message"> Сообщение </label>
+        <input
+          type="textarea"
+          id="fb-message"
+          name="message"
+          placeholder="Сообщение"
+          minlength="100"
+          required
+        />
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>О пользователе</h2>
+      <form id="user-form">
+        <label for="username"> Имя пользователя </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Ваше имя пользователя"
+          minlength="2"
+          required
+        />
+
+        <label for="aboutme"> О себе </label>
+        <textarea
+          id="aboutme"
+          name="aboutme"
+          placeholder="О себе"
+          minlength="100"
+          required
+        >
+        </textarea>
+
+        <div id="symbol-counter">0/100</div>
+      </form>
+    </div>
+
+    <div>
+      <h2>Выбор направления</h2>
+      <form id="direction-form">
+        <label for="direction"> Направление </label>
+        <select id="direction">
+          <option value="">Выберите направление</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Design">Design</option>
+        </select>
+      </form>
+    </div>
+
+    <div>
+      <h2>Форма согласия</h2>
+      <form id="agree-form">
+        <label>
+          <input
+            type="checkbox"
+            id="agree-form"
+            name="agreement"
+            placeholder="Согласие"
+            required
+          />
+          Я согласен(на) с правилами
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Анкета</h2>
+      <form id="final-form">
+        <label for="ff-name">Имя</label>
+        <input
+          type="text"
+          id="ff-name"
+          name="name"
+          placeholder="Ваше имя"
+          minlength="2"
+          required
+        />
+
+        <label for="ff-surname">Фамилия</label>
+        <input
+          type="text"
+          id="ff-surname"
+          name="surname"
+          placeholder="Ваша фамилия"
+          minlength="2"
+          required
+        />
+
+        <label for="ff-email">Email</label>
+        <input
+          type="email"
+          id="ff-email"
+          name="email"
+          placeholder="Ваш email"
+          minlength="2"
+          required
+        />
+
+        <label for="ff-birthdate">Дата рождения</label>
+        <input
+          type="date"
+          id="ff-birthdate"
+          name="birthdate"
+          placeholder="Ваша дата рождения"
+          minlength="2"
+          required
+        />
+
+        <label for="ff-direction"> Направление </label>
+        <select id="ff-direction" name="direction">
+          <option value="">Выберите направление</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Design">Design</option>
+        </select>
+
+        <label for="ff-comment"> Комментарий </label>
+        <textarea
+          id="ff-comment"
+          name="comment"
+          placeholder="Комментарий"
+          minlength="100"
+          required
+        >
+        </textarea>
+
+        <label>
+          <input type="checkbox" id="ff-agree-form" name="agreement" required />
+          Я согласен(на) с правилами
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="hw-5.js"></script>
+  </body>
+</html>

@@ -17,11 +17,11 @@ function sum(a, b) {
 }
 const sumResult = sum(5, 10);
 
-const multiply = (a, b) => {
+const multiplyy = (a, b) => {
   return a * b;
 };
-multiply(2, 5);
-console.log(multiply(2, 5));
+multiplyy(2, 5);
+console.log(multiplyy(2, 5));
 
 function formatPrice(price) {
   return `${price} ₸`;
@@ -50,11 +50,11 @@ function showMessage() {
   console.log("Hello");
 }
 
-const showMessage = function () {
+const showedMessage = function () {
   console.log("Hello");
 };
 
-const showMessage = () => {
+const showeddMessage = () => {
   console.log("Hello");
 };
 
@@ -62,7 +62,7 @@ function double(number) {
   return number * 2;
 }
 
-const double = (number) => number * 2;
+const doublee = (number) => number * 2;
 
 // сработает, выведет Hello
 
@@ -71,13 +71,13 @@ const double = (number) => number * 2;
 function sum(a, b) {
   return a + b;
 }
-const result = sum(a, b);
+const resultz = sum(2, 3);
 
-const sum = function (a, b) {
+const summ = function (a, b) {
   return a + b;
 };
 
-const sum = (a, b) => a + b;
+const summm = (a, b) => a + b;
 
 // ЧАСТЬ 3
 
@@ -98,11 +98,11 @@ const resulttt = sum(2, 3);
 // consol.log (user) должен быть внутри функции
 
 function createUser() {
-  const user = {
+  const userA = {
     name: "Amina",
     age: 20,
   };
-  return user;
+  return userA;
 }
 const userInfo = createUser();
 console.log(userInfo);
@@ -111,11 +111,11 @@ console.log(userInfo);
 
 // forEach перебирает функцию шоунамбер, а пустые скобки - это результат функции
 
-const numbers = [1, 2, 3];
+const numbers114 = [1, 2, 3];
 function showNumber(number) {
   console.log(number);
 }
-numbers.forEach(showNumber);
+numbers114.forEach(showNumber);
 
 const products = [
   { name: "Phone", price: 300000 },
@@ -138,26 +138,26 @@ console.log(expensiveProducts);
 
 const prices = [1000, 2000, 5000];
 
-const users = [
+const usersz = [
   { name: "Amina", age: 17 },
   { name: "Dana", age: 25 },
   { name: "Ali", age: 16 },
   { name: "Aruzhan", age: 20 },
 ];
-const filteredUsers = users.filter((user) => {
+const filteredUsers = usersz.filter((user) => {
   return user.age >= 18;
 });
 console.log(filteredUsers);
 
-const productsS = [
+const productsSs = [
   { name: "Phone", price: 300000, isAvailable: true },
   { name: "Laptop", price: 500000, isAvailable: false },
   { name: "Mouse", price: 15000, isAvailable: true },
 ];
-const availableProducts = productsS.filter((product) => {
+const availableProductsz = productsSs.filter((product) => {
   return product.isAvailable === true;
 });
-const nameAvProd = availableProducts.map((product) => product.name);
+const nameAvProd = availableProductsz.map((product) => product.name);
 console.log(nameAvProd);
 
 const resultT = productsS.filter((product) => {
@@ -165,8 +165,8 @@ const resultT = productsS.filter((product) => {
 });
 console.log(resultT);
 
-const numbersSs = [1, 2, 3];
-const resultTt = numbersSs.map((number) => {
+const numbersSsz = [1, 2, 3];
+const resultTt = numbersSsz.map((number) => {
   return number * 2;
 });
 console.log(resultTt);
@@ -194,9 +194,9 @@ colorButton.addEventListener("click", function () {
   colorButton.classList.toggle("active");
 });
 
-const title = document.querySelector(".title");
-title.addEventListener("mouseenter", () => {
-  console.log(title.textContent);
+const title1 = document.querySelector(".title");
+title1.addEventListener("mouseenter", () => {
+  console.log(title1.textContent);
 });
 
 const titlee = document.querySelector(".title");
@@ -272,22 +272,22 @@ const showButton48 = document.querySelector(".show-button");
 function toggleButton(button) {
   button.classList.toggle("active");
 }
-showButtonNN.addEventListener("click", () => {
-  toggleButton(showButton);
+showButton48.addEventListener("click", () => {
+  toggleButton(showButton48);
 });
 
-const cards = querySelectorAll(".cardd");
-cards.forEach((cardd) => {
+const ccards = document.querySelectorAll(".cardd");
+ccards.forEach((cardd) => {
   cardd.addEventListener("click", () => {
-    cards.forEach(function (cc) {
+    ccards.forEach(function (cc) {
       cc.classList.remove("selected");
     });
     cardd.classList.add("selected");
   });
 });
 
-const cardds = querySelectorAll(".cardd");
-cardds.forEach((cardd) => {
+const carddds = document.querySelectorAll(".cardd");
+carddds.forEach((cardd) => {
   cardd.addEventListener("click", function (event) {
     event.target.classList.add("selected");
   });
@@ -324,7 +324,7 @@ function getExpensiveProducts(products9, minPrice) {
 }
 console.log(getExpensiveProducts(products9));
 
-const expensiveButton = document.querySelector("button-expensive");
+const expensiveButton = document.querySelector(".button-expensive");
 expensiveButton.addEventListener("click", () => {
   const result = getExpensiveProducts(products9, 100000);
   console.log(result);
@@ -375,7 +375,7 @@ const buttonElement = document.getElementById("showButton11");
 
 function getFilteredProducts(products11, minPrice) {
   const filteredProd = products11.filter((product) => {
-    return product.isAvailable && product.price > minPrice;
+    return product.isAvailable && product.price >= minPrice;
   });
   return filteredProd.map((product) => product.name);
 }
@@ -387,7 +387,7 @@ function handleShowClick() {
     return;
   }
   const minPrice11 = Number(inputValue);
-  const prodNames = getFilteredProd(products11, minPrice11);
+  const prodNames = getFilteredProducts(products11, minPrice11);
   console.log(prodNames);
 }
 

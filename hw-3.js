@@ -6,6 +6,7 @@ fruitsC.forEach((fruit) => {
 });
 
 const numbersC = [2, 4, 6, 8];
+0;
 numbersC.forEach((number) => {
   console.log(number * 2);
 });
@@ -262,16 +263,16 @@ const productsMm = productsM.filter((product) => {
 const productsMmm = productsMm.map((product) => product.name);
 console.log(productsMmm);
 
-const usersM = [
+const usersMm = [
   { name: "Amina", age: 17 },
   { name: "Dana", age: 25 },
   { name: "Ali", age: 16 },
   { name: "Aruzhan", age: 20 },
 ];
-const adultUsersM = usersM.filter((user) => {
+const adultUsersMm = usersMm.filter((user) => {
   return user.age >= 18;
 });
-const adultUsersMName = adultUsersM.map((user) => user.name);
+const adultUsersMName = adultUsersMm.map((user) => user.name);
 console.log(adultUsersMName);
 
 // ЧАСТЬ 9
@@ -292,29 +293,29 @@ const resultQ = numbers.map((number) => {
 
 // бесконечный цикл, нужно добавить счетчик i++
 
-const productsQ = [
+const productsQq = [
   { name: "Phone", isAvailable: true },
   { name: "Laptop", isAvailable: false },
 ];
-const resultQq = productsQ.filter((product) => {
+const resultQq = productsQq.filter((product) => {
   return product.isAvailable === true;
 });
 
 // ЧАСТЬ 10
 
-const productsW = [
+const productsWq = [
   { name: "Phone", price: 300000, isAvailable: true },
   { name: "Laptop", price: 500000, isAvailable: false },
   { name: "Mouse", price: 15000, isAvailable: true },
   { name: "Tablet", price: 200000, isAvailable: true },
 ];
 
-productsW.forEach((product) => {
+productsWq.forEach((product) => {
   console.log(product.name);
 });
 
-for (let i = 0; i < productsW.length; i++) {
-  console.log(`${productsW[i].name}, ${i}`);
+for (let i = 0; i < productsWq.length; i++) {
+  console.log(`${productsWq[i].name}, ${i}`);
 }
 
 const productsWw = productsW.filter((product) => {
@@ -336,4 +337,4 @@ const availableProd = productsW.filter(
 const availableProdNames = availableProd.map((product) => {
   return product.name;
 });
-console.log(availableProdName);
+console.log(availableProdNames);
