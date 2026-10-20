@@ -97,7 +97,7 @@ console.log(fruits[1]);
 console.log(fruits[fruits.length - 1]);
 
 const colorss = ["red", "green", "blue"];
-console.log(colors[1]);
+console.log(colorss[1]);
 // выведется green
 
 const numbersS = [5, 10, 15];
@@ -209,7 +209,7 @@ productsW.forEach((product) => {
 const numbersX = [1, 5, 10, 15, 20];
 
 numbersX.forEach((number) => {
-  if (index > 10) {
+  if (number > 10) {
     console.log(number);
   }
 });
@@ -321,7 +321,7 @@ const firstCard = document.querySelector(".card");
 
 const allCards = document.querySelectorAll(".card");
 
-const allTexts = document.getElementByClassName("text");
+const allTexts = document.getElementById("text");
 
 const titleQ = document.querySelector("#title");
 
@@ -350,19 +350,19 @@ cardds.forEach((cardd) => {
 
 const cards70 = document.querySelectorAll(".card");
 
-card70.forEach((card) => {
+cards70.forEach((card) => {
   console.log(card.textContent);
 });
 
 const cards71 = document.querySelectorAll(".card");
 
-card71.forEach((card) => {
+cards71.forEach((card) => {
   console.log(card.classList.add("active"));
 });
 
 const cards72 = document.querySelectorAll(".card");
 
-card72.forEach((card, index) => {
+cards72.forEach((card, index) => {
   if (index === 0 || index === 1) {
     card.classList.add("first");
   } else {
@@ -372,7 +372,7 @@ card72.forEach((card, index) => {
 
 const cards73 = document.querySelectorAll(".card");
 
-card73.forEach((card, index) => {
+cards73.forEach((card, index) => {
   if (index <= 5) {
     card.classList.add("main.cards");
   } else {
