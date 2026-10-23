@@ -1,0 +1,33 @@
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal.modal__open {
+  display: flex;
+}
+
+.modal__content {
+  position: relative;
+  background: #fff;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
