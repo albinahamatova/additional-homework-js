@@ -15,7 +15,7 @@ feedbackForm.addEventListener("submit", (event) => {
 // ЗАДАНИЕ 2
 
 const passwordForm = document.querySelector("#password-form");
-passwordForm.addEventListener("click", (event) => {
+passwordForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(passwordForm);
   const formValues = Object.fromEntries(formData);
